@@ -1,36 +1,11 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+ImageEditor est une application web intuitive permettant de personnaliser facilement une image en ajustant son padding, son border-radius et ses ombres à l'aide de curseurs interactifs. L'utilisateur peut ensuite télécharger ou copier l'image modifiée en un clic.
 
-## Getting Started
+Ce que j'ai appris : 
 
-First, run the development server:
+Utilisation de Web Workers : Implémentation d'un worker pour gérer les modifications d'image de manière asynchrone, sans bloquer le thread principal.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Manipulation dynamique de styles : Ajustement des propriétés padding, border-radius et box-shadow avec des curseurs en temps réel.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Gestion du clipboard : Intégration de navigator.clipboard.write pour copier l'image.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Téléchargement d'images modifiées : Génération et exportation des images avec les styles appliqués.
